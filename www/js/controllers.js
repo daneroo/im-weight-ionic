@@ -13,7 +13,10 @@ angular.module('starter.controllers', [])
       console.log('Fetched:',observations);
       console.log('-',observations._id);
       $scope.obsId = observations._id;
-      $scope.values = observations.values;
+
+      // truncate for now...
+      $scope.values = observations.values.slice(0,100);
+
       $scope.lastValue = ($scope.values && $scope.values.length>0)?$scope.values[0]:'??';
     })
     .finally(function(){
