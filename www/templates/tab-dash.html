@@ -1,5 +1,35 @@
 <ion-view title="Dashboard">
   <ion-content class="padding">
-    <h1>Dash</h1>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="fetch()">
+    </ion-refresher>
+    <!-- <h2>Observations</h2> -->
+    <button class="button icon-left ion-ios7-cloud-download-outline button-balanced" ng-click="fetch()">
+    Fetch!
+    </button>
+    <ul class="list">
+      <li class="item">
+        {{obsId}}
+      </li>
+      <li class="item" style="padding:0px;">
+        <div class="row">
+          <div class="col col-66">{{lastValue.stamp}}</div>
+          <div class="col col-33">{{lastValue.value}}</div>
+        </div>
+      </li>
+      <li class="item item-divider">
+        Observations
+      </li>
+      <!-- see ionic collection-repeat -->
+      <li class="item" style="padding:0px;">
+        <div class="row" ng-repeat="value in values">
+          <div class="col col-66">{{value.stamp}}</div>
+          <div class="col col-33">{{value.value}}</div>
+        </div>
+      </li>
+    </ul>
+
+    
   </ion-content>
 </ion-view>
