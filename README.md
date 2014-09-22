@@ -14,6 +14,14 @@ Consider  [generator-ionic](https://github.com/diegonetto/generator-ionic), at l
 
 ## Ionic related
 
+  ionuc build ios
+  ionic emulate ios
+
+  ionic build android
+  # with device connected or genymotion started
+  adb devices
+  ionic run android
+
 ## Cordova related
 
 ### Icons
