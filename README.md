@@ -1,0 +1,34 @@
+# im-weight-ionic
+
+## Instructions
+
+  # initial setup ??
+  npm install 
+  bower install  # not yet setup
+
+  grunt serve
+
+## Build
+
+Consider  [generator-ionic](https://github.com/diegonetto/generator-ionic), at least for the grunt build.
+
+## Ionic related
+
+## Cordova related
+
+### Icons
+
+http://learn.ionicframework.com/formulas/adding-an-icon
+
+https://github.com/AlexDisler/cordova-icon
+
+  brew install imagemagick
+  npm i -g ...
+
+### selection ios device emulator
+
+Where TARGET is one of: iPad, iPhone, iPad (Retina), iPhone (Retina 3.5-inch), iPhone (Retina 4-inch)
+
+
+  ios-sim showdevicetypes
+  ionic emulate ios --target="iPhone (Retina 4-inch)"
