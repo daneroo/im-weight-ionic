@@ -5,6 +5,9 @@
   # initial setup ??
   npm install 
   bower install  # not yet setup
+  mkdir plugins
+  ionic platform add ios
+  ionic platform add android
 
   grunt serve
 
