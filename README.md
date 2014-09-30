@@ -8,6 +8,8 @@
   mkdir plugins
   ionic platform add ios
   ionic platform add android
+  # if you want to use sass
+  ionic setup sass
 
   ionic serve
 
