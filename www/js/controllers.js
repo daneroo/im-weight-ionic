@@ -28,8 +28,34 @@ angular.module('starter.controllers', [])
   $scope.fetch();
 })
 
-.controller('FriendsCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
+.controller('FriendsCtrl', function($scope,Observations) {
+
+  $scope.graph = {
+    data: [],
+    options: {
+      // title:'Obserama',
+      labels: ["x", "W"]
+    }
+  };
+
+  Observations.get().then(function(observations){
+    // console.log(observations);
+    var data = [];
+    observations.values.slice(0,30).forEach(function(o){
+      data.push([new Date(o.stamp),o.value/1000]);
+    });
+    $scope.graph.data=data;
+  });
+
+  var base_time = Date.parse("2014/07/01");
+  var num = 24 * 0.25 * 365;
+  for (var i = 0; i < num; i++) {
+    $scope.graph.data.push([new Date(base_time + i * 3600 * 1000),
+      // i + 50 * (i % 60), // line
+      i * (num - i) * 4.0 / num // parabola
+    ]);
+  }
+
 })
 
 .controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {

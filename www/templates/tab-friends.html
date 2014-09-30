@@ -1,5 +1,15 @@
 <ion-view title="Friends">
   <ion-content>
+    <div>
+        Here is a thingZ
+        <im-dygraphs style="height:150px;"
+                 data="graph.data"
+                 options="graph.options"
+                 legend="graph.legend"
+         >
+        </im-dygraphs>
+
+    </div>
     <ion-list>
       <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
         {{friend.name}}
