@@ -2,6 +2,7 @@
   "name": "im-weight-ionic",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-beta.12"
+    "ionic": "driftyco/ionic-bower#1.0.0-beta.12",
+    "dygraphs": "~1.0.1"
   }
 }
