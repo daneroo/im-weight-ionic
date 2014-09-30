@@ -27,6 +27,7 @@ Consider  [generator-ionic](https://github.com/diegonetto/generator-ionic), at l
   adb devices
   ionic run android
 
+
 ## Cordova related
 
 ### Icons
@@ -45,3 +46,9 @@ Where TARGET is one of: iPad, iPhone, iPad (Retina), iPhone (Retina 3.5-inch), i
 
   ios-sim showdevicetypes
   ionic emulate ios --target="iPhone (Retina 4-inch)"
+
+  ## Dygraphs
+  Added with bower but nee to make the `dygraph-combined.js` with:
+
+    cd www/lib
+    make
