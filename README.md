@@ -9,7 +9,7 @@
   ionic platform add ios
   ionic platform add android
 
-  grunt serve
+  ionic serve
 
 ## Build
 
