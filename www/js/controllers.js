@@ -34,30 +34,52 @@ angular.module('starter.controllers', [])
     data: [[new Date(+new Date()-3600000),101],[new Date(),100]],
     options: {
       // title:'Obserama',
-      labels: ["x", "W"]
+      labels: ["x", "W"],
+
+      title: '6 months',
+      titleHeight: 32,
+      logscale: false,
+
+      //showRoller: true, // allows controlling roller
+      // rollPeriod: 30, // ok depends on scale
+
+      //rollPeriod: 3,
+      // errorBars: true, requires sigma column
+
+      // gridLineColor: '#FF0000',
+      // highlightCircleSize: 10,
+      strokeWidth: 2,
+
+      axisLabelColor: 'gray',
+
+      colors: ['rgb(128,128,255)'],
+      // axis:{
+      //   'weight':{axisLabelWidth:20}
+      // },
+      // axisLineColor: 'blue',
+      // drawXGrid: false,
+      // drawYGrid: false,
+      // axisLabelWidth:100, // doesn't seem to do anything
+      yAxisLabelWidth: 25,
+
+      showLabelsOnHighlight: false,
+      // for touch stuff later...
+      //interactionModel: interactionModel
+      // interactionModel: {},
+      // date Window: [now - desiredDays * day, now],
     }
   };
 
   Observations.get().then(function(observations){
     // console.log(observations);
     var data = [];
-    observations.values.slice(0,100).forEach(function(o){
-    // observations.values.forEach(function(o){
+    // observations.values.slice(0,100).forEach(function(o){
+    observations.values.forEach(function(o){
       data.push([new Date(o.stamp),o.value/1000]);
     });
     data = data.reverse();
     $scope.graph.data=data;
   });
-
-  // var base_time = Date.parse("2014/07/01");
-  // var num = 24 * 0.25 * 365;
-  // for (var i = 0; i < num; i++) {
-  //   // console.log(new Date(base_time + i * 3600 * 1000));
-  //   $scope.graph.data.push([new Date(base_time + i * 3600 * 1000),
-  //     // i + 50 * (i % 60), // line
-  //     i * (num - i) * 4.0 / num // parabola
-  //   ]);
-  // }
 
 })
 

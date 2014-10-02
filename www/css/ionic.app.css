@@ -7814,3 +7814,14 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
 .platform-c:not(.enable-transitions) * {
   -webkit-transition: none !important;
   transition: none !important; }
+
+ion-view.pane {
+  background: black;
+  /* Chrome10+,Safari5.1+ */
+  background: -webkit-radial-gradient(center center, circle cover, #8080ff 0%, #000000 40%);
+  background-size: 100% 200%;
+  /* to recenter the bg */
+  background-position: 50% 0%;
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s; }
+
