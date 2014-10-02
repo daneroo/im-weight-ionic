@@ -62,7 +62,7 @@ angular.module('starter.controllers', [])
     }
   };
 
-  if(0) Observations.get().then(function(observations){
+  Observations.get().then(function(observations){
     // console.log(observations);
     var data = [];
     // observations.values.slice(0,100).forEach(function(o){
