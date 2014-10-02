@@ -31,7 +31,7 @@ angular.module('starter.controllers', [])
 .controller('FriendsCtrl', function($scope,Observations) {
 
   $scope.graph = {
-    data: [[new Date(+new Date()-3600000),101],[new Date(),100]],
+    data: [[new Date(+new Date()-3600000),100],[new Date(),100]],
     options: {
       // title:'Obserama',
       labels: ["x", "W"],
