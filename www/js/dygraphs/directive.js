@@ -57,17 +57,17 @@ angular.module("im-dygraphs", [])
                     // return;
                     var maxWidth = 0;
 
-                    graph.resize(700,300);
-                    return;
 
-                    console.log("Heights", parent.height(), parent.outerHeight(true),
-                        $(mainDiv).outerHeight(), element.height() );
+                    // console.log("window: ", $window.width(),$window.height());
+                    console.log("parent: ", parent[0].offsetWidth, parent[0].offsetHeight);
 
-                    graph.resize(parent.width(), parent.height() );
-                    chartArea = $(chartDiv).offset();
-                    chartArea.bottom = chartArea.top + parent.height() - legendHeight;
-                    chartArea.right = chartArea.left + parent.width();
-                    console.log("Position",chartArea);
+                    // graph.resize(parent[0].offsetWidth, parent[0].offsetHeight );
+                    graph.resize(parent[0].offsetWidth, 200 );
+
+                    // chartArea = $(chartDiv).offset();
+                    // chartArea.bottom = chartArea.top + parent.height() - legendHeight;
+                    // chartArea.right = chartArea.left + parent.width();
+                    // console.log("Position",chartArea);
                 }
             }
         };
