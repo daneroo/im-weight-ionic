@@ -7815,7 +7815,15 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   -webkit-transition: none !important;
   transition: none !important; }
 
+.dygraph-label.dygraph-title {
+  color: #808080; }
+
+.dygraph-axis-label {
+  color: #808080; }
+
 ion-view.pane {
+  /*text*/
+  /* background color and gradient*/
   background: black;
   /* Chrome10+,Safari5.1+ */
   background: -webkit-radial-gradient(center center, circle cover, #8080ff 0%, #000000 40%);

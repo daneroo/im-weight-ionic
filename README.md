@@ -1,5 +1,13 @@
 # im-weight-ionic
 
+## Todo
+
+* Button (style+gradient)
+* Dialog/Popup (entry)
+* Anchorzoom (mouse behavior)
+* cleanup views (menu/tabs) list or not... 
+* cleanup code structure
+
 ## Instructions
 
   # initial setup ??

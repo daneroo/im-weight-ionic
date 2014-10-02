@@ -33,36 +33,28 @@ angular.module('starter.controllers', [])
   $scope.graph = {
     data: [[new Date(+new Date()-3600000),100],[new Date(),100]],
     options: {
-      // title:'Obserama',
-      labels: ["x", "W"],
+      // let's take the title out! (style in css anyways)
+      // title: '6 months',
+      // titleHeight: 32,
 
-      title: '6 months',
-      titleHeight: 32,
-      logscale: false,
-
-      //showRoller: true, // allows controlling roller
-      // rollPeriod: 30, // ok depends on scale
-
-      //rollPeriod: 3,
-      // errorBars: true, requires sigma column
-
-      // gridLineColor: '#FF0000',
-      // highlightCircleSize: 10,
-      strokeWidth: 2,
-
-      axisLabelColor: 'gray',
-
-      colors: ['rgb(128,128,255)'],
-      // axis:{
-      //   'weight':{axisLabelWidth:20}
-      // },
-      // axisLineColor: 'blue',
-      // drawXGrid: false,
-      // drawYGrid: false,
-      // axisLabelWidth:100, // doesn't seem to do anything
+      // thinner left axis label margin
       yAxisLabelWidth: 25,
+      digitsAfterDecimal:1,
 
-      showLabelsOnHighlight: false,
+      // graph line
+      strokeWidth: 2,
+      colors: ['rgb(128,128,255)'],
+
+      // Legend
+      // legend:'always',
+      // labels: ['x', 'W'],
+      // showLabelsOnHighlight: false,
+
+
+      // showRoller: true, // allows controlling roller
+      // rollPeriod: 10, // ok depends on scale - 10 fo all time is good...
+
+
       // for touch stuff later...
       //interactionModel: interactionModel
       // interactionModel: {},
@@ -70,7 +62,7 @@ angular.module('starter.controllers', [])
     }
   };
 
-  Observations.get().then(function(observations){
+  if(0) Observations.get().then(function(observations){
     // console.log(observations);
     var data = [];
     // observations.values.slice(0,100).forEach(function(o){
