@@ -27,7 +27,7 @@ Consider  [generator-ionic](https://github.com/diegonetto/generator-ionic), at l
 
 ## Ionic related
 
-  ionuc build ios
+  ionic build ios
   ionic emulate ios
 
   ionic build android

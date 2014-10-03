@@ -16,6 +16,8 @@ $dark:                            #444 !default;
 */
 
 $light:                           #fff !default;
+$base-background-color:           #444 !default;
+$base-color:                      #ccc !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -29,8 +31,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .dygraph-axis-label {
     color: #808080;    
 }
+
+/* backround color and gradient */
 ion-view.pane {
     /*text*/
+    color: grey;
 
     /* background color and gradient*/
 
