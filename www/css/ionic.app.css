@@ -7844,8 +7844,8 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
     text-decoration: none;
     color: #555;
     background: #f5f5f5; }
-  .roundbottombutton li.sunken {
-    bottom: -44px; }
+  .roundbottombutton li.sunken a {
+    bottom: -32px; }
   .roundbottombutton li.left {
     position: absolute;
     left: 0px;
@@ -7861,15 +7861,19 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
     background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
     background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
     color: #a7a7a7;
-    margin: 48px 72px 0px 48px;
-    width: 48px;
-    height: 48px;
+    margin: 36px 54px 0px 36px;
+    width: 36px;
+    height: 36px;
     position: relative;
     text-align: center;
-    line-height: 48px;
+    line-height: 36px;
     border-radius: 50%;
-    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff; }
-  .roundbottombutton a:before {
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+    bottom: 0px;
+    -transition: bottom 0.5s;
+    -webkit-transition: bottom 0.5s;
+    -moz-transition: bottom 0.5s; }
+  .roundbottombutton NOT.a:before {
     content: "";
     display: block;
     background: #fff;

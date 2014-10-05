@@ -2,7 +2,7 @@
  scss'ified
 */
 
-$bbsize: 48px;
+$bbsize: 36px;
 $bbwell: 18px;
 
 .roundbottombutton {
@@ -28,9 +28,9 @@ $bbwell: 18px;
     background: #f5f5f5;
   }
 
-  li.sunken{
+  li.sunken a{
     // almost half hidden
-    bottom: -$bbsize+4px;
+    bottom: -$bbsize/2 - $bbwell + 4px;
   }
   li.left{
     position: absolute;
@@ -61,10 +61,15 @@ $bbwell: 18px;
     border-radius: 50%;
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
 
+    bottom:0px;
+    -transition: bottom .5s;
+    -webkit-transition: bottom .5s;
+    -moz-transition: bottom .5s;
+
   }
 
   // well : turned off
-  a:before {
+  NOT.a:before {
     content: "";
     display: block;
     background: #fff;

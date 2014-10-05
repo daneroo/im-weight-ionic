@@ -80,4 +80,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
+  $scope.sunken=true;
+  $scope.click=function(){
+    $scope.sunken = !$scope.sunken;
+  }
 });

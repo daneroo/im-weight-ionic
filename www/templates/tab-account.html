@@ -8,9 +8,14 @@
 
     <!-- this works with scroll-false-->
     <div style="position: absolute; bottom: 0px; width: 100%; ">
+      {{sunken}}
       <ul class="roundbottombutton">        
         <li class="left"><a><i class="icon ion-navicon"></i></a></li> 
-        <li class="sunken"><a><i class="icon ion-plus-round"></i></a></li> 
+        <li ng-class="{sunken:sunken}">
+          <a ng-click='click()'>
+            <i class="icon ion-plus-round"></i>
+          </a>
+        </li> 
         <!-- <li><a><i class="icon ion-navicon-round"></i></a></li>  -->
       </ul> 
     </div>
