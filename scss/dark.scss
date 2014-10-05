@@ -1,0 +1,18 @@
+/* backround color and gradient */
+ion-view.pane {
+    /*text*/
+    color: grey;
+
+    /* background color and gradient*/
+
+    background:black; 
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-radial-gradient(center center, circle cover,  rgb(128,128,255) 0%,rgb(0,0,0) 40%); 
+
+    background-size:100% 200%;
+    /* to recenter the bg */
+    background-position:50% 0%;
+
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+}

@@ -15,47 +15,24 @@ $royal:                           #8a6de9 !default;
 $dark:                            #444 !default;
 */
 
+/*
 $light:                           #fff !default;
 $base-background-color:           #444 !default;
 $base-color:                      #ccc !default;
-
+*/
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-.dygraph-label.dygraph-title {
-    color: #808080;
-}
-.dygraph-axis-label {
-    color: #808080;    
-}
+// dygraphs
+@import "dygraphs";
 
-/* backround color and gradient */
-ion-view.pane {
-    /*text*/
-    color: grey;
-
-    /* background color and gradient*/
-
-    background:black; 
-    /* Chrome10+,Safari5.1+ */
-    background: -webkit-radial-gradient(center center, circle cover,  rgb(128,128,255) 0%,rgb(0,0,0) 40%); 
-
-    background-size:100% 200%;
-    /* to recenter the bg */
-    background-position:50% 0%;
-
-    -webkit-transition: background-position 1s;
-    -moz-transition: background-position 1s;
-}
+/*@import "dark";*/
+@import "roundbutton";
 
 
-NOT.dygraph1 {
-    /*display: none;*/
-    /*width: 320px;*/
 
-    /*width:100%;*/
-    /*height:300px;*/
-}
+
+

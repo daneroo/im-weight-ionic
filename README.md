@@ -4,7 +4,7 @@
 
 * Button (style+gradient)
   * position (+) done
-  * [rouded css](http://css-tricks.com/examples/RoundButtons/)
+  * [rounded css](http://css-tricks.com/circular-3d-buttons/)
   * dark/light
   * rounded css w/ image (twofeet.(jpg|svg))
 * cleanup code structure
