@@ -112,5 +112,14 @@ angular.module('starter.controllers', [])
   $scope.click=function(){
     $scope.sunken = !$scope.sunken;
     $scope.modal.show();
-  }
+  };
+  $scope.onDrag = function($event){
+    // console.log('drag1',$event);
+    // console.log('drag1',$event.gesture);
+    // console.log('drag1',$event.gesture.angle);
+    var t = $event.gesture.touches[0];
+    // console.log('drag',t);
+    // console.log('drag',[t.clientX,t.clientY,t.pageX,t.pageY,t.screenX,t.screenY]);
+    $scope.touches = JSON.stringify([t.clientX,t.clientY,t.pageX,t.pageY,t.screenX,t.screenY],null,2);
+  };
 });
