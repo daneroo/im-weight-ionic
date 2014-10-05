@@ -33,6 +33,16 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "roundbutton";
 
 
+// rounded modal
+$modalRadius: 10px;
+ion-modal-view.rounded {
+  /*background-color: rgba(255, 255, 255, 0.75);*/
+  border-radius: $modalRadius $modalRadius;
+  ion-header-bar {
+    /*background-color: rgba(255, 255, 255, 0);*/
+    border-radius: $modalRadius $modalRadius 0 0;
+  }
 
+}
 
 

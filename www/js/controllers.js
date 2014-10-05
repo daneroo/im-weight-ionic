@@ -79,9 +79,38 @@ angular.module('starter.controllers', [])
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope,$ionicModal) {
   $scope.sunken=true;
+
+  $ionicModal.fromTemplateUrl('templates/addobs-modal.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+
+  // Execute action on show modal
+  $scope.$on('modal.shown', function() {
+    // Execute action
+    console.log('shown');
+  });
+  // Execute action on hide modal
+  $scope.$on('modal.hidden', function() {
+    // Execute action
+    console.log('hidden');
+  });
+  // Execute action on remove modal
+  $scope.$on('modal.removed', function() {
+    // Execute action
+    console.log('removed');
+  });
+
   $scope.click=function(){
     $scope.sunken = !$scope.sunken;
+    $scope.modal.show();
   }
 });

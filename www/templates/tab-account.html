@@ -1,23 +1,22 @@
 <ion-view title="Account">
-  <ion-content class="padding" scroll="false">
+  <ion-content class="padding" scroll="false" has-footer="true">
 
     <h1>Account</h1>
 
     <div>blablabla</div>
 
 
+    {{sunken}}
     <!-- this works with scroll-false-->
     <div style="position: absolute; bottom: 0px; width: 100%; ">
-      {{sunken}}
-      <ul class="roundbottombutton">        
-        <li class="left"><a><i class="icon ion-navicon"></i></a></li> 
-        <li ng-class="{sunken:sunken}">
-          <a ng-click='click()'>
-            <i class="icon ion-plus-round"></i>
-          </a>
-        </li> 
-        <!-- <li><a><i class="icon ion-navicon-round"></i></a></li>  -->
-      </ul> 
+      <div class="roundbutton left">
+        <a><i class="icon ion-navicon"></i></a>
+      </div>
+      <div class="roundbutton centered" ng-class="{sunken:sunken}">
+        <a  ng-click='click()'>
+          <i class="icon ion-plus-round"></i>
+        </a>
+      </div>
     </div>
 
   </ion-content>
