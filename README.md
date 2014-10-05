@@ -7,7 +7,9 @@
   * [rouded css](http://css-tricks.com/examples/RoundButtons/)
   * dark/light
   * rounded css w/ image (twofeet.(jpg|svg))
-* restart with `ionic start ionic-sidemenu sidemenu`
+* cleanup code structure
+  * restart with `ionic start ionic-sidemenu sidemenu`
+  * [generator?](https://github.com/diegonetto/generator-ionic)
 * Dialog/Popup (entry)
   * Simple (OK)
   * with return value
@@ -17,7 +19,6 @@
   * native ionic gestures
   * ng-hammer overlay
 * cleanup views (menu/tabs) list or not... 
-* cleanup code structure
 
 ## Instructions
 
