@@ -63,12 +63,21 @@ https://github.com/AlexDisler/cordova-icon
 
 Where TARGET is one of: iPad, iPhone, iPad (Retina), iPhone (Retina 3.5-inch), iPhone (Retina 4-inch)
 
+  ionic emulate ios --target="iPhone"
+  ionic emulate ios --target="iPhone (Retina 3.5-inch)"
+  ionic emulate ios --target="iPhone (Retina 4-inch)"
+  ionic emulate ios --target="iPad"
+  ionic emulate ios --target="iPad (Retina)"
 
   ios-sim showdevicetypes
-  ionic emulate ios --target="iPhone (Retina 4-inch)"
+  ios-sim launch ./platforms/ios/build/emulator/iM-Weight.app --devicetypeid com.apple.CoreSimulator.SimDeviceType.iPhone-5
+  ios-sim launch ./platforms/ios/build/emulator/iM-Weight.app --devicetypeid com.apple.CoreSimulator.SimDeviceType.iPhone-5s
+  ios-sim launch ./platforms/ios/build/emulator/iM-Weight.app --devicetypeid com.apple.CoreSimulator.SimDeviceType.iPhone-6
+  ios-sim launch ./platforms/ios/build/emulator/iM-Weight.app --devicetypeid com.apple.CoreSimulator.SimDeviceType.iPhone-6-Plus
+  ios-sim launch ./platforms/ios/build/emulator/iM-Weight.app --devicetypeid "com.apple.CoreSimulator.SimDeviceType.iPhone-6, 8.0"
+  
+## Dygraphs
+Added with bower but nee to make the `dygraph-combined.js` with:
 
-  ## Dygraphs
-  Added with bower but nee to make the `dygraph-combined.js` with:
-
-    cd www/lib
-    make
+  cd www/lib
+  make
