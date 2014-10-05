@@ -3,8 +3,19 @@
 ## Todo
 
 * Button (style+gradient)
+  * position (+) done
+  * [rouded css](http://css-tricks.com/examples/RoundButtons/)
+  * dark/light
+  * rounded css w/ image (twofeet.(jpg|svg))
+* restart with `ionic start ionic-sidemenu sidemenu`
 * Dialog/Popup (entry)
+  * Simple (OK)
+  * with return value
+  * with rouded button(s)
 * Anchorzoom (mouse behavior)
+  * interraction model
+  * native ionic gestures
+  * ng-hammer overlay
 * cleanup views (menu/tabs) list or not... 
 * cleanup code structure
 
